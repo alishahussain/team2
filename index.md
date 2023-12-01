@@ -1,9 +1,11 @@
 ---
-layout: home
-search_exclude: true
+layout: base
+title: Course Outlines
+image: /images/mario_animation.png
+hide: true
 ---
-A modified blog for CSA Based on Fastpages- Tirth Thakkar & Haseeb Beg   
+<br/>
+
+## Welcome to the arcade!
 
 
-
-# Posts

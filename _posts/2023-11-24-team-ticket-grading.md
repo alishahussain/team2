@@ -5,7 +5,7 @@ title: Review Ticket
 description: This is the review ticket for group 8
 courses: { csp: {week: 13} }
 categories: []
-permalink: team-ticket
+permalink: tt
 type: ccc
 ---
 

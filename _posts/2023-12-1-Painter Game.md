@@ -14,7 +14,10 @@ type: ccc
   <title>Painter Game</title>
   <style>
     canvas {
-      border: 1px solid black;
+        border: 1px solid black;
+        display: block;
+        margin: auto;
+        background-color: rgb(0, 128, 145); /* background color */
     }
   </style>
 </head>
@@ -25,12 +28,12 @@ type: ccc
     const context = canvas.getContext('2d');
 
     const BLACK = 'rgb(0, 0, 0)';
-    const WHITE = 'rgb(200, 200, 200)';
+    const WHITE = 'rgb(255, 255, 255)';
     const COLOR_BAR_HEIGHT = 30;
-    const COLOR_BAR_COLORS = ['rgb(255, 0, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)'];
+    const COLOR_BAR_COLORS = ['rgb(255, 0, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 255)', 'rgb(0, 0, 0)',];
 
     const GRID_WIDTH = 400;
-    const GRID_HEIGHT = 300;
+    const GRID_HEIGHT = 400;
     const BLOCK_SIZE = 20;
 
     let selectedColor = WHITE;
@@ -41,13 +44,17 @@ type: ccc
     }
 
     function drawGrid() {
-      for (let x = 0; x < GRID_WIDTH; x += BLOCK_SIZE) {
-        for (let y = 0; y < GRID_HEIGHT; y += BLOCK_SIZE) {
+      const startX = (canvas.width - GRID_WIDTH) / 2;
+      const startY = (canvas.height - GRID_HEIGHT) / 2;
+      
+
+      for (let x = startX; x < startX + GRID_WIDTH; x += BLOCK_SIZE) {
+        for (let y = startY; y < startY + GRID_HEIGHT; y += BLOCK_SIZE) {
           context.beginPath();
           context.rect(x, y, BLOCK_SIZE, BLOCK_SIZE);
-          context.fillStyle = grid[x / BLOCK_SIZE][y / BLOCK_SIZE] === 0 ? BLACK : selectedColor;
+          context.fillStyle = grid[(x - startX) / BLOCK_SIZE][(y - startY) / BLOCK_SIZE] === 0 ? BLACK : selectedColor;
           context.fill();
-          context.lineWidth = 1;
+          context.lineWidth = 2;
           context.strokeStyle = WHITE;
           context.stroke();
         }
@@ -75,8 +82,8 @@ type: ccc
         const colorIndex = Math.floor(mousePos.x / (canvas.width / COLOR_BAR_COLORS.length));
         selectedColor = COLOR_BAR_COLORS[colorIndex];
       } else {
-        const gridX = Math.floor(mousePos.x / BLOCK_SIZE);
-        const gridY = Math.floor(mousePos.y / BLOCK_SIZE);
+        const gridX = Math.floor((mousePos.x - (canvas.width - GRID_WIDTH) / 2) / BLOCK_SIZE);
+        const gridY = Math.floor((mousePos.y - (canvas.height - GRID_HEIGHT) / 2) / BLOCK_SIZE);
         grid[gridX][gridY] = selectedColor === BLACK ? 0 : selectedColor;
       }
       draw();

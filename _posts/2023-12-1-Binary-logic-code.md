@@ -36,7 +36,11 @@ comments: true
 [Binary Painter Game](https://alishahussain.github.io/team2//binary-painter)
 
 >- This is a binary painter game
->- Alisha add facts about your game and how it uses binary/teaches it here using these bullet points. 
+>- a blank canvas of pixels will be provided for the user, as well as a color selection bar. 
+>- The user will be able to click on the pixels and fill it with color. They will be able to manipulate each pixel's color by toggling individual bits on the grid.
+>- Purpose of the feature?
+    >- Users will use this game to enjoy making mini artworks, while also learning different functions of binary
+    >- Each color is represented by a binary code, and users can create intricate patterns and designs by combining different binary values.
 
 [Binary Memory Game](LINK GOES HERE.)
 

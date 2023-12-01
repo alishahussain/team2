@@ -17,7 +17,7 @@ type: ccc
         border: 1px solid black;
         display: block;
         margin: auto;
-        background-color: rgb(0, 128, 145); /* background color */
+        /* background-color: rgb(0, 128, 145); /* background color */
     }
   </style>
 </head>

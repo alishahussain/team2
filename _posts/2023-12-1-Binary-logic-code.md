@@ -42,8 +42,12 @@ comments: true
     >- Users will use this game to enjoy making mini artworks, while also learning different functions of binary
     >- Each color is represented by a binary code, and users can create intricate patterns and designs by combining different binary values.
 
-[Binary Memory Game](LINK GOES HERE.)
+[Binary Memory Game](https://alishahussain.github.io/team2//memory-game)
 
 >- This is a binary memory game 
->- Anika add facts about your game and how it uses binary/teaches it here using these bullet points. 
+>- 16 blue carda are displayed. 
+>- The player is able to select two cards at a time, which will flip the card over revealing the other side. 
+>- If the two cards match, they will stay flipped, if not they will flip back to the orginal blue side.
+>- The game ends when all of the cards are matched. 
+>- Using this the player is able to get familar with the binary logic terms, and build their knowledge about the combination of numbers. 
 

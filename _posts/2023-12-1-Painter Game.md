@@ -22,6 +22,8 @@ type: ccc
   </style>
 </head>
 <body>
+  <h1>Painter Game!!</h1>
+  <p>Have fun with this awesome arcade game! </p>
   <canvas id="gridCanvas" width="600" height="600"></canvas>
   <script>
     const canvas = document.getElementById('gridCanvas');
@@ -30,7 +32,7 @@ type: ccc
     const BLACK = 'rgb(0, 0, 0)';
     const WHITE = 'rgb(255, 255, 255)';
     const COLOR_BAR_HEIGHT = 30;
-    const COLOR_BAR_COLORS = ['rgb(255, 0, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 255)', 'rgb(0, 0, 0)',];
+    const COLOR_BAR_COLORS = ['rgb(255, 0, 0)', 'rgb(0, 255, 0)', 'rgb(0, 0, 255)', 'rgb(255, 255, 255)', 'rgb(0, 0, 0)', 'rgb(0, 0, 0)'];
 
     const GRID_WIDTH = 400;
     const GRID_HEIGHT = 400;
@@ -88,6 +90,7 @@ type: ccc
       }
       draw();
     }
+    
 
     function draw() {
       context.clearRect(0, 0, canvas.width, canvas.height);
@@ -98,6 +101,65 @@ type: ccc
     canvas.addEventListener('mousedown', handleMouseDown);
 
     draw();
+    function binaryToRGB(binary) {
+    // Convert binary to decimal
+    const decimalValue = parseInt(binary, 2);
+
+    // Convert decimal to RGB
+    const r = (decimalValue >> 16) & 255;
+    const g = (decimalValue >> 8) & 255;
+    const b = decimalValue & 255;
+
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
+  function drawColorBar() {
+    // Draw color boxes
+    for (let i = 0; i < COLOR_BAR_COLORS.length; i++) {
+      context.fillStyle = COLOR_BAR_COLORS[i];
+      context.fillRect(i * (canvas.width / COLOR_BAR_COLORS.length), canvas.height - COLOR_BAR_HEIGHT, canvas.width / COLOR_BAR_COLORS.length, COLOR_BAR_HEIGHT);
+    }
+
+    // Draw custom binary input box
+    context.fillStyle = 'lightgray';
+    context.fillRect(canvas.width - 150, canvas.height - COLOR_BAR_HEIGHT, 150, COLOR_BAR_HEIGHT);
+
+    // Draw text inside the custom binary input box
+    context.fillStyle = 'black';
+    context.font = '12px Arial';
+    context.fillText('Custom Binary:', canvas.width - 145, canvas.height - 10);
+  }
+
+  function handleMouseDown(event) {
+    const mousePos = getMousePos(event);
+
+    // Check if the click is inside the custom binary input box
+    if (
+      mousePos.x >= canvas.width - 150 &&
+      mousePos.y >= canvas.height - COLOR_BAR_HEIGHT
+    ) {
+      const binaryInput = prompt('Enter binary color:'); // You can use a more sophisticated input method
+      if (binaryInput) {
+        selectedColor = binaryToRGB(binaryInput);
+      }
+    } else if (mousePos.y >= canvas.height - COLOR_BAR_HEIGHT) {
+      // Handle clicks on the color bar
+      const colorIndex = Math.floor(
+        mousePos.x / (canvas.width / COLOR_BAR_COLORS.length)
+      );
+      selectedColor = COLOR_BAR_COLORS[colorIndex];
+    } else {
+      // Handle clicks on the grid
+      const gridX = Math.floor(
+        (mousePos.x - (canvas.width - GRID_WIDTH) / 2) / BLOCK_SIZE
+      );
+      const gridY = Math.floor(
+        (mousePos.y - (canvas.height - GRID_HEIGHT) / 2) / BLOCK_SIZE
+      );
+      grid[gridX][gridY] = selectedColor === BLACK ? 0 : selectedColor;
+    }
+    draw();
+  }
   </script>
 </body>
 </html>

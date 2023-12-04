@@ -18,7 +18,7 @@ comments: true
 >- Binary Memory Game
 >- MORE (soon!)
 
-[Binary Puzzle Game](https://alishahussain.github.io/team2//b-g)
+[Binary Puzzle Game](https://alishahussain.github.io/team2//b-g) (Sergi)
 
 >- This is a javascript binary puzzle game
 >- The game consists of two different puzzles displayed on one screen
@@ -33,7 +33,7 @@ comments: true
 >- Player is able to end game when needed. 
 >- At the end of the day the game helps the player figure out how binary works and how it is closely related to math. 
 
-[Binary Painter Game](https://alishahussain.github.io/team2//binary-painter)
+[Binary Painter Game](https://alishahussain.github.io/team2//binary-painter) (Alisha)
 
 >- This is a binary painter game
 >- a blank canvas of pixels will be provided for the user, as well as a color selection bar. 
@@ -42,7 +42,7 @@ comments: true
     >- Users will use this game to enjoy making mini artworks, while also learning different functions of binary
     >- Each color is represented by a binary code, and users can create intricate patterns and designs by combining different binary values.
 
-[Binary Memory Game](https://alishahussain.github.io/team2//memory-game)
+[Binary Memory Game](https://alishahussain.github.io/team2//memory-game) (Anika)
 
 >- This is a binary memory game 
 >- 16 blue carda are displayed. 
@@ -51,3 +51,13 @@ comments: true
 >- The game ends when all of the cards are matched. 
 >- Using this the player is able to get familar with the binary logic terms, and build their knowledge about the combination of numbers. 
 
+## Issues: 
+
+>- Binary Puzzle Game has trouble fitting into the screen (cannot scroll)
+>- Binary Painter Game needs to have a key for better understanding and fix the color issue
+>- Memory game might need multiple levels
+>- Having trouble adding the quiz
+
+## Peer Grade:
+>- The games are unique, and I like that they are all very binary oriented, however, while I think the Puzzle game is great, the other 2 could have more SASS integrated into them. The memory 1 could have more SASS but also a point system where each pair you get correct is 1 point and each wrong is -1 points. The painter game could add image templates as well. Overall, it is an incredible start, just needs a little more detail and finishing touches.
+.96/1.0

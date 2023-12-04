@@ -33,8 +33,8 @@ type: ccc
     </style>
 </head>
 <body>
-<h1> Memory Game 
-<p> Flip the cards until you find the matching pair, test your memory. Watch the time, Don't take too long!
+<h1> Memory Game </h1>
+<p> Flip the cards until you find the matching pair, test your memory. Watch the time, Don't take too long! </p>
     <div id="timer">Time: 0 seconds</div>
     <div id="gameBoard" class="game-board"></div>
     <script>
@@ -113,5 +113,3 @@ type: ccc
             }
         });
     </script>
-</body>
-</html>

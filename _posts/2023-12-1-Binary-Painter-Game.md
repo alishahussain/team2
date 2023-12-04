@@ -3,7 +3,7 @@ layout: post
 toc: false
 description:
 courses: { csp: {week: 14} }
-permalink: binary-painter
+permalink: binary-painter-game
 type: ccc
 ---
 

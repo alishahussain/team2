@@ -18,7 +18,6 @@ type: ccc
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 5px;
         }
-
         .card {
             background-color: blue;
             display: flex;
@@ -27,17 +26,27 @@ type: ccc
             font-size: 20px;
             cursor: pointer;
         }
+        #timer {
+            margin: 20px 0;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
+<h1> Memory Game 
+<p> Flip the cards until you find the matching pair, test your memory. Watch the time, Don't take too long!
+    <div id="timer">Time: 0 seconds</div>
     <div id="gameBoard" class="game-board"></div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const gameBoard = document.getElementById('gameBoard');
+            const timerDisplay = document.getElementById('timer');
             const binaryNumbers = Array.from({ length: 8 }, (_, i) => i.toString(2).padStart(4, '0'));
             let cards = [...binaryNumbers, ...binaryNumbers];
             let cardsRevealed = new Array(16).fill(false);
             let selectedCards = [];
+            let timeElapsed = 0;
+            let timer;
 
             shuffle(cards);
 
@@ -49,6 +58,13 @@ type: ccc
                 card.addEventListener('click', () => revealCard(card, index));
                 gameBoard.appendChild(card);
             });
+
+            timer = setInterval(updateTimer, 1000);
+
+            function updateTimer() {
+                timeElapsed++;
+                timerDisplay.textContent = 'Time: ' + timeElapsed + ' seconds';
+            }
 
             function revealCard(card, index) {
                 if (cardsRevealed[index] || selectedCards.includes(index)) return;
@@ -79,6 +95,9 @@ type: ccc
                 }
 
                 selectedCards = [];
+                if (cardsRevealed.every(val => val)) {
+                    clearInterval(timer);
+                }
             }
 
             function hideCard(card) {

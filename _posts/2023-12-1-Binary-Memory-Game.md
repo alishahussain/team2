@@ -33,16 +33,17 @@ type: ccc
     </style>
 </head>
 <body>
-<h1> Memory Game </h1>
-<p> Flip the cards until you find the matching pair, test your memory. Watch the time, Don't take too long! </p>
+    <h1> Memory Game </h1>
+    <p> Flip the cards until you find the matching pair, test your memory. Watch the time, Don't take too long! </p>
     <div id="timer">Time: 0 seconds</div>
     <div id="gameBoard" class="game-board"></div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const gameBoard = document.getElementById('gameBoard');
             const timerDisplay = document.getElementById('timer');
-            const binaryNumbers = Array.from({ length: 8 }, (_, i) => i.toString(2).padStart(4, '0'));
-            let cards = [...binaryNumbers, ...binaryNumbers];
+            const binaryNumbers1 = Array.from({ length: 8 }, (_, i) => i.toString(2).padStart(4, '0'));
+            const binaryNumbers2 = Array.from({ length: 8 }, (_, i) => (i + 8).toString(2).padStart(4, '0')); // new set of binary numbers
+            let cards = [...binaryNumbers1, ...binaryNumbers1];
             let cardsRevealed = new Array(16).fill(false);
             let selectedCards = [];
             let timeElapsed = 0;
@@ -70,7 +71,7 @@ type: ccc
                 if (cardsRevealed[index] || selectedCards.includes(index)) return;
 
                 card.style.backgroundColor = 'white';
-                card.textContent = card.getAttribute('data-number');
+                card.textContent = index < 8 ? binaryNumbers2[index] : binaryNumbers2[index - 8]; // Display number from the second set on reverse
                 selectedCards.push(index);
 
                 if (selectedCards.length === 2) {
@@ -113,3 +114,6 @@ type: ccc
             }
         });
     </script>
+</body>
+</html>
+

@@ -17,7 +17,14 @@ type: ccc
     }
   </style>
   <h1>Painter Game!!</h1>
+  <div></div>
   <p>Have fun with this awesome arcade game! To input your own binary code, the format is an 8 bit  value for the rgb value. for example. the value for red is 11111111 00000000 00000000</p>
+  <h4 id="key">Key</h4>
+  <ul>
+  <li>red- 11111111 00000000 00000000</li>
+  <li>green- 00000000 11111111 00000000</li>
+  <li>blue- 00000000 00000000 11111111</li>
+  </ul>
   <canvas id="gridCanvas" width="600" height="600"></canvas>
   <script>
     const canvas = document.getElementById('gridCanvas');
@@ -38,12 +45,9 @@ type: ccc
     function createGrid(rows, cols) {
       return Array.from({ length: rows }, () => Array(cols).fill(0));
     }
-
     function drawGrid() {
       const startX = (canvas.width - GRID_WIDTH) / 2;
       const startY = (canvas.height - GRID_HEIGHT) / 2;
-      
-
       for (let x = startX; x < startX + GRID_WIDTH; x += BLOCK_SIZE) {
         for (let y = startY; y < startY + GRID_HEIGHT; y += BLOCK_SIZE) {
           context.beginPath();
@@ -56,14 +60,14 @@ type: ccc
         }
       }
     }
-
+  /*drawing color bar*/
     function drawColorBar() {
       for (let i = 0; i < COLOR_BAR_COLORS.length; i++) {
         context.fillStyle = COLOR_BAR_COLORS[i];
         context.fillRect(i * (canvas.width / COLOR_BAR_COLORS.length), canvas.height - COLOR_BAR_HEIGHT, canvas.width / COLOR_BAR_COLORS.length, COLOR_BAR_HEIGHT);
       }
     }
-
+  /*coloring in functions*/
     function getMousePos(event) {
       const rect = canvas.getBoundingClientRect();
       return {
@@ -71,7 +75,6 @@ type: ccc
         y: event.clientY - rect.top
       };
     }
-
     function handleMouseDown(event) {
       const mousePos = getMousePos(event);
       if (mousePos.y >= canvas.height - COLOR_BAR_HEIGHT) {
@@ -84,22 +87,17 @@ type: ccc
       }
       draw();
     }
-    
-
+    /*drawing */
     function draw() {
       context.clearRect(0, 0, canvas.width, canvas.height);
       drawGrid();
       drawColorBar();
     }
-
     canvas.addEventListener('mousedown', handleMouseDown);
-
     draw();
     function binaryToRGB(binary) {
-    // Convert binary to decimal
+    /*Convert binary input to decimal*/
     const decimalValue = parseInt(binary, 2);
-
-    // Convert decimal to RGB
     const r = (decimalValue >> 16) & 255;
     const g = (decimalValue >> 8) & 255;
     const b = decimalValue & 255;

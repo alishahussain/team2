@@ -20,6 +20,7 @@ type: ccc
         }
         .card {
             background-color: blue;
+            color: black; /* Set text color to black */
             display: flex;
             align-items: center;
             justify-content: center;

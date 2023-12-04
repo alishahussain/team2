@@ -23,7 +23,7 @@ type: ccc
 </head>
 <body>
   <h1>Painter Game!!</h1>
-  <p>Have fun with this awesome arcade game! </p>
+  <p>Have fun with this awesome arcade game! To input your own binary code, the format is an 8 bit  value for the rgb value. for example. the value for red is 11111111 00000000 00000000</p>
   <canvas id="gridCanvas" width="600" height="600"></canvas>
   <script>
     const canvas = document.getElementById('gridCanvas');

@@ -11,7 +11,7 @@ var questions = [
       answer: "B"
     },
   {
-      question: What is the term used to describe a single digit in the binary system?",
+      question: "What is the term used to describe a single digit in the binary system?",
       a: "byte",
       b: "dot",
       c: "bit",
@@ -46,25 +46,25 @@ var questions = [
       answer: "B"
     },
     {
-      question: "What is 8 x 12?",
-      a: "88",
-      b: "112",
-      c: "96",
+      question: "In binary, what function does a left shift involve?",
+      a: "Doubling the value",
+      b: "Dividing the value by 2",
+      c: "Subtracting one digit from the value",
+      answer: "A"
+    },
+    {
+      question: "What is the result of adding the binary numbers 1011 and 1101?",
+      a: "1100",
+      b: "0011",
+      c: "0111",
       answer: "C"
     },
     {
-      question: "What is 8 x 12?",
-      a: "88",
-      b: "112",
-      c: "96",
-      answer: "C"
-    },
-    {
-      question: "What is 8 x 12?",
-      a: "88",
-      b: "112",
-      c: "96",
-      answer: "C"
+      question: "What is the correct conversion of the number 42 into binary?",
+      a: "101001",
+      b: "101010",
+      c: "1010011",
+      answer: "B"
     },
     {
       question: "What is 8 x 12?",

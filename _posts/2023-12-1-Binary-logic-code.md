@@ -63,7 +63,7 @@ comments: true
 >- Students have the choice to take this quiz as many times as they want and whenever they want.
 >- This quiz is also used for the user's reflection on how much binary they learned through our arcade.
 >- The quiz will have 15 multiple choice questions, each including 3 options.
->- Using this quiz, the user will not only reflect on their knowldge, they will also learn as their knowledge os put up to test
+>- Using this quiz, the user will not only reflect on their knowldge, they will also learn as their knowledge os put up to test.
 
 ## Issues: 
 

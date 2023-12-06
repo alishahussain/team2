@@ -27,7 +27,7 @@ type: ccc
             font-size: 20px;
             cursor: pointer;
         }
-        #timer {
+        #timer, #score {
             margin: 20px 0;
             font-size: 20px;
         }
@@ -37,17 +37,20 @@ type: ccc
     <h1> Memory Game </h1>
     <p> Flip the cards until you find the matching pair, test your memory. Watch the time, Don't take too long! </p>
     <div id="timer">Time: 0 seconds</div>
+    <div id="score">Score: 0</div>
     <div id="gameBoard" class="game-board"></div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const gameBoard = document.getElementById('gameBoard');
             const timerDisplay = document.getElementById('timer');
-            const binaryNumbers1 = Array.from({ length: 8 }, (_, i) => i.toString(2).padStart(4, '0'));
-            const binaryNumbers2 = Array.from({ length: 8 }, (_, i) => (i + 8).toString(2).padStart(4, '0')); // new set of binary numbers
-            let cards = [...binaryNumbers1, ...binaryNumbers1];
+            const scoreDisplay = document.getElementById('score');
+            const binaryNumbers = Array.from({ length: 8 }, (_, i) => i.toString(2).padStart(3, '0'));
+            const exponents = binaryNumbers.map((_, i) => i.toString());
+            let cards = [...binaryNumbers, ...exponents]; // Pair each binary number with its exponent
             let cardsRevealed = new Array(16).fill(false);
             let selectedCards = [];
             let timeElapsed = 0;
+            let score = 0;
             let timer;
 
             shuffle(cards);
@@ -72,7 +75,8 @@ type: ccc
                 if (cardsRevealed[index] || selectedCards.includes(index)) return;
 
                 card.style.backgroundColor = 'white';
-                card.textContent = index < 8 ? binaryNumbers2[index] : binaryNumbers2[index - 8]; // Display number from the second set on reverse
+                let cardContent = index < 8 ? binaryNumbers[index] : exponents[index - 8];
+                card.textContent = cardContent;
                 selectedCards.push(index);
 
                 if (selectedCards.length === 2) {
@@ -84,10 +88,14 @@ type: ccc
                 const [index1, index2] = selectedCards;
                 const card1 = gameBoard.children[index1];
                 const card2 = gameBoard.children[index2];
+                const isMatch = (index1 < 8 && card2.textContent === index1.toString()) ||
+                                (index2 < 8 && card1.textContent === index2.toString());
 
-                if (card1.getAttribute('data-number') === card2.getAttribute('data-number')) {
+                if (isMatch) {
                     console.log("Match found!");
                     cardsRevealed[index1] = cardsRevealed[index2] = true;
+                    score += 1;
+                    scoreDisplay.textContent = 'Score: ' + score;
                 } else {
                     console.log("No match.");
                     setTimeout(() => {
@@ -117,4 +125,6 @@ type: ccc
     </script>
 </body>
 </html>
+
+
 

@@ -25,6 +25,48 @@ var questions = [
       answer: "A"
     },
   {
+      question: "What is the decimal equivalent to the binary number 1101",
+      a: "15",
+      b: "12",
+      c: "13",
+      answer: "C"
+    },
+    {
+      question: "In binary addition, what is the result when adding 1 and 1?",
+      a: "10",
+      b: "100",
+      c: "2",
+      answer: "A"
+    },
+    {
+      question: "What is the base of the binary number system?",
+      a: "1",
+      b: "2",
+      c: "10",
+      answer: "B"
+    },
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
       question: "What is 8 x 12?",
       a: "88",
       b: "112",

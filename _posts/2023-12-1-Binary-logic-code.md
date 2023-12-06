@@ -43,7 +43,7 @@ comments: true
     >- Users will use this game to enjoy making mini artworks, while also learning different functions of binary
     >- Each color is represented by a binary code, and users can create intricate patterns and designs by combining different binary values.
 
-[Binary Memory Game](https://alishahussain.github.io/team2//memory-game) (Anika)
+[Binary Memory Game](https://alishahussain.github.io/team2//binary-quiz) (Anika)
 
 >- This is a binary memory game 
 >- 16 blue carda are displayed. 

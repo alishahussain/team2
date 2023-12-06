@@ -4,27 +4,24 @@ var pos = 0, quiz, quiz_status, question, selectedAnswer, options, optionA, opti
 // this is a multi-dimensional array with objects containing each question
 var questions = [
   {
-      question: "How is the concept of "0" and "1" represented in the binary number system?,
-      a: "True & False",
-      b: "On & Off",
-      c: "Red and Blue",
-      d: "Positive and Negative",
+      question: "How is the concept of 0 and 1 represented in the binary number system?",
+      a: "Positive and Negative",
+      b: "On and Off",
+      c: "True and False",
       answer: "B"
     },
   {
       question: What is the term used to describe a single digit in the binary system?",
-      a: "Byte",
-      b: "Tip",
-      c: "Bit",
-      d: "Octet",
+      a: "byte",
+      b: "dot",
+      c: "bit",
       answer: "C"
     },
   {
-      question: "In computing, what term is used to refer to a group of 8 binary digits?",
-      a: "Octet",
-      b: "Stack",
-      c: "Megabyte",
-      d: "Quad",
+      question: "What is the correct Binary conversion of 25",
+      a: "11001",
+      b: "10101",
+      c: "10010",
       answer: "A"
     },
   {

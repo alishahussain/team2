@@ -73,6 +73,42 @@ var questions = [
       c: "256",
       answer: "A"
     },   
+    {
+      question: "What is the result of adding the binary numbers 110 and 011?",
+      ",
+      a: "111",
+      b: "101",
+      c: "100",
+      answer: "A"
+    },
+    {
+      question: "How many values can a single binary digit/bit represent?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
+      question: "Which of the following is not a binary operation?",
+      a: "AND",
+      b: "THEN",
+      c: "XOR",
+      answer: "B"
+    },
+    {
+      question: "What is the correct binary representation for the number 12?",
+      a: "1100",
+      b: "1001",
+      c: "0110",
+      answer: "A"
+    },
+    {
+      question: "What decimal number does the binary representation 10010 correspond to?",
+      a: "22",
+      b: "12",
+      c: "18",
+      answer: "B"
+    },
   ];
 
 // this get function is short for the getElementById function	

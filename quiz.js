@@ -75,7 +75,6 @@ var questions = [
     },   
     {
       question: "What is the result of adding the binary numbers 110 and 011?",
-      ",
       a: "111",
       b: "101",
       c: "100",
@@ -93,6 +92,20 @@ var questions = [
       a: "AND",
       b: "THEN",
       c: "XOR",
+      answer: "B"
+    },
+    {
+      question: "What is the correct binary representation for the number 12?",
+      a: "1100",
+      b: "1001",
+      c: "0110",
+      answer: "A"
+    },
+    {
+      question: "What decimal number does the binary representation 10010 correspond to?",
+      a: "22",
+      b: "12",
+      c: "96",
       answer: "B"
     },
   ];

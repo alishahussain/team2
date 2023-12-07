@@ -82,9 +82,9 @@ var questions = [
     },
     {
       question: "How many values can a single binary digit/bit represent?",
-      a: "88",
-      b: "112",
-      c: "96",
+      a: "8",
+      b: "4",
+      c: "2",
       answer: "C"
     },
     {

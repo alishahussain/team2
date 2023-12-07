@@ -72,6 +72,41 @@ var questions = [
       b: "112",
       c: "96",
       answer: "C"
+    },   
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
+    },
+    {
+      question: "What is 8 x 12?",
+      a: "88",
+      b: "112",
+      c: "96",
+      answer: "C"
     },
   ];
 

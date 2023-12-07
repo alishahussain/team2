@@ -95,13 +95,6 @@ var questions = [
       c: "XOR",
       answer: "B"
     },
-    {
-      question: "What is the correct binary representation for the number 12?",
-      a: "1100",
-      b: "1001",
-      c: "0110",
-      answer: "A"
-    },
   ];
 
 // this get function is short for the getElementById function	

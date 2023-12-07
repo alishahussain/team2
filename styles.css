@@ -4,8 +4,8 @@ body{
     min-height: 500px;
 }
 div#quiz{
-    border: #5eff00 3px solid;
+    border: #59ff00 3px solid;
     padding: 10px 40px 40px 40px;
-    background-color: #0e2a0c;
+    background-color: hsl(116, 66%, 9%);
     width: 50%;
 }

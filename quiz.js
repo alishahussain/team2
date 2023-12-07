@@ -102,13 +102,6 @@ var questions = [
       c: "0110",
       answer: "A"
     },
-    {
-      question: "What decimal number does the binary representation 10010 correspond to?",
-      a: "22",
-      b: "12",
-      c: "18",
-      answer: "B"
-    },
   ];
 
 // this get function is short for the getElementById function	

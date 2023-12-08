@@ -17,6 +17,8 @@ Binary Representation:
 
 > To represent these ASCII values in binary, you need to convert the decimal (base-10) values to binary (base-2).
 
+![]({{site.baseurl}}/images/acsiii.PNG)
+
 ## Binary Conversion:
 > Start by dividing the decimal number by 2 and note down the remainder. Continue dividing the quotient by 2 until the quotient is 0. The remainders, read in reverse order, give you the binary representation.
 

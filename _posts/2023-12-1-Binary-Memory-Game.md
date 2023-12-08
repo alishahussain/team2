@@ -17,30 +17,32 @@ type: ccc
             justify-content: center;
             gap: 50px;
         }
-        .game-board {
-            width: 400px;
-            height: 400px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 5px;
-        }
+       .game-board {
+        width: 400px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        border-collapse: collapse; /* Add this line to ensure borders collapse into a single line */
+    }
         .game-board.hard {
             grid-template-columns: repeat(5, 1fr); /* More columns for higher difficulty */
-            background-color: lightgrey; /* Different background for distinction */
+            background-color: black; /* Different background for distinction */
         }
         .game-board.hardest {
             grid-template-columns: repeat(6, 1fr); /* Even more columns for the highest difficulty */
-            background-color: lightcoral; /* Different background for distinction */
-        }
-        .card {
-            background-color: blue;
-            color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            cursor: pointer;
-        }
+            background-color: black; /* Different background for distinction */
+    }  
+      .card {
+        background-color: blue;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid #39FF14; /* Set border color to neon green */
+    }
         #timer, #score, #timer2, #score2, #timer3, #score3 {
             margin: 20px 0;
             font-size: 20px;

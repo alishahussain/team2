@@ -1,33 +1,51 @@
-const words = ["easy", "world", "team", "binary", "simple", "zebra", "square", "jar", "war","bear"];
+const words = ["hi", "meat", "team", "binary", "simple", "car", "tin", "man", "war","bear", "no", "ew"];
 let currentWord = "";
 let lastWord = "";
 let score = 0;
 let strikes = 0;
 
 function generateRandomWord() {
-    let newWord;
-    do {
-        const randomIndex = Math.floor(Math.random() * words.length);
-        newWord = words[randomIndex];
-    } while (newWord === lastWord);
-    
-    lastWord = newWord;
-    return newWord;
+    const randomIndex = Math.floor(Math.random() * words.length);
+    return words[randomIndex];
 }
 
 function convertToBinary(word) {
-    return word.split('').map(char => char.charCodeAt(0).toString(2)).join(' ');
+    return word.split('').map(char => {
+        const binary = char.charCodeAt(0).toString(2);
+        return '0'.repeat(8 - binary.length) + binary; // Ensure each binary representation is 8 bits
+    }).join(' ');
+}
+
+function convertToText(binary) {
+    const binaryArray = binary.split(' ');
+    return binaryArray.map(bin => String.fromCharCode(parseInt(bin, 2))).join('');
+}
+
+function randomlyChooseTranslationDirection() {
+    return Math.random() < 0.5; // 50% chance of true (binary to text) or false (text to binary)
 }
 
 function displayNewWord() {
-    currentWord = generateRandomWord();
-    const binaryRepresentation = convertToBinary(currentWord);
-    document.getElementById("word-display").innerText = binaryRepresentation;
+    let newWord;
+    do {
+        newWord = generateRandomWord();
+    } while (newWord === lastWord);
+    
+    lastWord = newWord;
+    
+    const isBinaryToText = randomlyChooseTranslationDirection();
+    const displayWord = isBinaryToText ? convertToBinary(newWord) : newWord;
+    currentWord = newWord;
+    
+    document.getElementById("word-display").innerText = displayWord;
 }
 
 function checkAnswer() {
     const userInput = document.getElementById("user-input").value.toLowerCase();
-    if (userInput === currentWord) {
+    const isBinaryToText = document.getElementById("word-display").innerText.includes(' '); // Check if the displayed word is in binary
+    const correctAnswer = isBinaryToText ? currentWord : convertToBinary(currentWord);
+    
+    if (userInput === correctAnswer) {
         score++;
         document.getElementById("score").innerText = `Score: ${score}`;
         displayNewWord();

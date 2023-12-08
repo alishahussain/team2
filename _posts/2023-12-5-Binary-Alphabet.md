@@ -7,7 +7,7 @@ permalink: Binary Alphabet
 type: ccc
 ---
 
-# Translating the Alphabet to Binary
+# Alphabetic Characters to Binary
 
 > In computers, characters are represented using a character encoding system. The most common one is ASCII (American Standard Code for Information Interchange).
 

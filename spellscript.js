@@ -1,4 +1,4 @@
-const words = ["hi", "meat", "team", "binary", "simple", "car", "tin", "man", "war","bear", "no", "ew"];
+const words = ["hi", "meat", "team", "binary", "simple", "car", "tin", "man", "war","bear", "no", "ew", "pop", "me", "fix"];
 let currentWord = "";
 let lastWord = "";
 let score = 0;

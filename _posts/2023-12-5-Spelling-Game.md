@@ -28,5 +28,5 @@ type: ccc
 </body>
 </html>
 
-
+[Instructions](https://alishahussain.github.io/team2//Binary%20Alphabet)
 

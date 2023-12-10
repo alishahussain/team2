@@ -77,6 +77,11 @@ type: ccc
 
 [Decimal to Binary Converter](https://alishahussain.github.io/team2//decimal-to-binary-convert)
 
-### Add 2 converter games, hexadecimal guide (decimal, binary), and then add the two converters for hexadecimals, then add a guessing game that could potentially have all 4 options
+###  hexadecimal guide (decimal, binary), then add a guessing game that could potentially have all 4 options
 -------------------------
 ### How to Convert Decimal to Hexadecimal
+
+
+
+>### Practice ALL your conversions here!
+[Bin, Dec, and Hex Converter]()

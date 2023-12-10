@@ -68,6 +68,15 @@ type: ccc
 <br><br>
 ![]({{site.baseurl}}/images/decimal3.png)
 
+
+>### Practice your binary conversions here! 
+
+[Binary to Decimal Converter](https://alishahussain.github.io/team2//binary-to-decimal-convert)
+
+>### Practice your decimal conversions here!
+
+[Decimal to Binary Converter](https://alishahussain.github.io/team2//decimal-to-binary-convert)
+
 ### Add 2 converter games, hexadecimal guide (decimal, binary), and then add the two converters for hexadecimals, then add a guessing game that could potentially have all 4 options
 -------------------------
 ### How to Convert Decimal to Hexadecimal

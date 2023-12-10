@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #793;
+  background: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.menu-bar {
+  height: 50px;
+  background: #333;
+}
+
+.game-container {
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+input {
+  width: 4em;
+  font-size: 2em;
+  color: rgb(119, 153, 51); /* Set input text color same as output */
+  background: inherit;
+  border: none;
+  border-bottom: 4px solid #377;
+  margin-top: 20px;
+}
+
+input:hover {
+  border: none;
+  border-bottom: 4px solid #377;
+}
+
+#binary {
+  font-family: monospace;
+  font-size: 3em;
+  color: #793;
+  margin-top: 20px;
+}

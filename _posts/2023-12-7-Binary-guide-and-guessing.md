@@ -113,6 +113,40 @@ type: ccc
 >- This example shows how you can convert into binary and then group to simplify before getting the desired hexadecimal value.
 <br><br>
 
+### How to Convert Binary to Hexadecimal
+
+>- The Binary to Hexadecimal conversion is the same as above, as you convert from Binary to Hexadecimal in that proccess too!
+<br><br>
+
+>- Step 1: Take the decimal number as dividend and 16 as the divisor (hexadecimal number will have 16 as a base)
+<br><br>
+
+>- Step 2: Divide the dividend with the divisor and store the remainder in an array
+<br><br>
+
+>- Step 3: Now divide the quotient obtained from the above step by 16 and store the remainder in the array.
+<br><br>
+
+>- Step 4: Repeat the third step until the number is greater than zero.
+<br><br>
+
+>- Step 5: The final hexadecimal value will be the reverse order of the array.
+<br><br>
+
+<br><br>
+![]({{site.baseurl}}/images/binhex1.png)
+<br><br>
+
+>- This picture shows the exact steps and shows an example of how to convert Binary to Hexadecimal
+<br><br>
+
+<br><br>
+![]({{site.baseurl}}/images/binhex2.png)
+<br><br>
+
+>- This picture uses the same method, but elaborates the steps more. You can see that it shows the steps (ex. grouping, etc.)
+<br><br>
+
 >#### Practice ALL your conversions here!
 [Bin, Dec, and Hex Converter](https://alishahussain.github.io/team2//hex-to-bin-and-dec)
 

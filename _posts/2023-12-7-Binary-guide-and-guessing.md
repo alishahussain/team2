@@ -151,10 +151,11 @@ type: ccc
 [Bin, Dec, and Hex Converter](https://alishahussain.github.io/team2//hex-to-bin-and-dec)
 
 >#### Now, apply what you've learned and play these guessing games!
-[Binary to Decimal Guessing Game](https://alishahussain.github.io/team2//binary-guessing-game)
+
+>[Binary to Decimal Guessing Game](https://alishahussain.github.io/team2//binary-guessing-game)
 <br><br>
 
-[Decimal to Binary Guessing Game](https://alishahussain.github.io/team2//decimal-guessing-game)
+>[Decimal to Binary Guessing Game](https://alishahussain.github.io/team2//decimal-guessing-game)
 
 >### Binary Conversion Tables
 

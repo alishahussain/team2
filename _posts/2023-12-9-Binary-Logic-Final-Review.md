@@ -25,7 +25,7 @@ The binary memory game is the feature I focused on for the past couple of weeks.
 ## Binary Knowledge Quiz 
 
 The binary knowldege quiz is a quiz that I created and focused on for these past few weeks. The purpose of this quiz is to test the user's knowledge about binary. This quiz is supposed to be taken after using our guides, using our converters, and playing our games. This will help the user finalize their learning about binary as they can tale this quiz as many times as they want. This quiz includes 3 multiple choice options, with 15 questions which include advanced and simple questions and information about binary. Users should take this quiz until they get atleast an 80% (12/15). At the beginning of my development, I ran into issues changing the theme of the quiz, but now I changed it into have a sleek green theme. I also had issues with conducting binary experiments but now I understand it all.
-[![Binary Quiz Video](https://img.youtube.com/vi/lhSMafcq8IY/0.jpg)](https://youtu.be/yKvhm2D_tdI)
+[![Binary Quiz Video](ytvid.png)](https://youtu.be/yKvhm2D_tdI)
 
 ### [Binary Puzzle Game and Guide](https://youtu.be/j0T-oaZraf0)
 

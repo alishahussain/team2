@@ -4,7 +4,7 @@ toc: false
 description: learn to translate text to binary
 courses: { csp: {week: 14} }
 permalink: Text To Binary Game
-type: ccc
+type: Arcade
 ---
 
 <html lang="en">

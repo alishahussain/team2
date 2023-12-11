@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 14} }
 permalink: binary-to-decimal-convert
-type: ccc
+type: Arcade
 ---
 
 

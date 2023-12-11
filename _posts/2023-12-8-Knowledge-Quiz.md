@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 14} }
 permalink: Binary-Quiz
-type: ccc
+type: Arcade
 ---
 
 <html>

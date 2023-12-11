@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 14} }
 permalink: hex-to-bin-and-dec
-type: ccc
+type: Arcade
 ---
 <html>
 <link href="hex.css" rel="stylesheet">

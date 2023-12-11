@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 14} }
 permalink: b-g
-type: ccc
+type: Arcade
 ---
 
 <html>

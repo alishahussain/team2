@@ -52,7 +52,7 @@ Load all posts
   <tr>
     <th>Week</th>
     <th>Code, Code, Code</th>
-    <th>Tools and DevOps</th>
+    <th>Arcade</th>
     <th>Collaboration</th>
   </tr>
 
@@ -98,7 +98,7 @@ Load all posts
           {% if post.type == "ccc" %}
               {% assign ccc = ccc | unshift: title %}
               {% assign ccc = ccc | unshift: url %}  
-          {% elsif post.type == "devops" %}
+          {% elsif post.type == "Arcade" %}
               {% assign devops = devops | unshift: title %}
               {% assign devops = devops | unshift: url %} 
           {% elsif post.type == "collab" %}

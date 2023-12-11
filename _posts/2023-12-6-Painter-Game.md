@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 14} }
 permalink: binary-painter
-type: ccc
+type: Arcade
 ---
 
 <title>Binary Painter Game</title>

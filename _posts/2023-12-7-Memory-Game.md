@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 14} }
 permalink: memory-game
-type: ccc
+type: Arcade
 ---
 
 <html>

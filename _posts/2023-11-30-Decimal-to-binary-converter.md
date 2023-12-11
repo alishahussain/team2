@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 14} }
 permalink: decimal-to-binary-convert
-type: ccc
+type: Arcade
 ---
 
 <h2><span>Decimal to Binary Converter</span></h2>

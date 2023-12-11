@@ -6,7 +6,7 @@ courses: { csp: {week: 14} }
 permalink: memory-game
 type: ccc
 ---
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>Binary Memory Game</title>
@@ -51,7 +51,7 @@ type: ccc
 </head>
 <body>
     <h1> Memory Game </h1>
-    <p> Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of diffuculty, or try just one! </p>
+    <p> Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of difficulty, or try just one! </p>
     <div class="container">
         <div class="game-section">
             <div id="timer">Time: 0 seconds</div>
@@ -77,14 +77,13 @@ type: ccc
                     [array[i], array[j]] = [array[j], array[i]];
                 }
             }
-
             function initGame(gameBoardId, timerId, scoreId, numPairs) {
                 const gameBoard = document.getElementById(gameBoardId);
                 const timerDisplay = document.getElementById(timerId);
                 const scoreDisplay = document.getElementById(scoreId);
                 const binaryNumbers = Array.from({ length: numPairs }, (_, i) => i.toString(2).padStart(3, '0'));
-                const exponents = binaryNumbers.map((_, i) => i.toString());
-                let cards = [...binaryNumbers, ...exponents];
+                const decimalNumbers = binaryNumbers.map(bin => parseInt(bin, 2).toString());
+                let cards = [...binaryNumbers, ...decimalNumbers];
                 let cardsRevealed = new Array(numPairs * 2).fill(false);
                 let selectedCards = [];
                 let timeElapsed = 0;
@@ -100,18 +99,20 @@ type: ccc
                         card.className = 'card';
                         card.setAttribute('data-number', number);
                         card.setAttribute('data-index', index);
+
+                        const decimal = number.length === 3 ? parseInt(number, 2) : number;
+                        card.setAttribute('data-decimal', decimal);
+
                         card.addEventListener('click', () => revealCard(card, index, board, cardsRevealed, selectedCards, scoreDisplay, score));
                         board.appendChild(card);
                     });
                 }
-
                 function updateTimer(display, elapsed) {
                     display.textContent = 'Time: ' + elapsed + ' seconds';
                 }
 
                 function revealCard(card, index, board, cardsRevealed, selectedCards, scoreDisplay, score) {
                     if (cardsRevealed[index] || selectedCards.includes(index)) return;
-
                     card.style.backgroundColor = 'white';
                     let cardContent = board.children[index].getAttribute('data-number');
                     card.textContent = cardContent;
@@ -126,7 +127,11 @@ type: ccc
                     const [index1, index2] = selectedCards;
                     const card1 = board.children[index1];
                     const card2 = board.children[index2];
-                    const isMatch = card1.textContent === card2.textContent;
+
+                    const number1 = card1.getAttribute('data-decimal');
+                    const number2 = card2.getAttribute('data-decimal');
+
+                    const isMatch = number1 === number2;
 
                     if (isMatch) {
                         console.log("Match found!");

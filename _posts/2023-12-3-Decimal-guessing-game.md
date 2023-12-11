@@ -7,6 +7,7 @@ permalink: decimal-guessing-game
 type: Arcade
 ---
 
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -28,7 +29,6 @@ type: Arcade
   <script type="text/javascript" src="dec.js"></script>
 </body>
 </html>
-
 
 
 

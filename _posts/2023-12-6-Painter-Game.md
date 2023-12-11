@@ -12,6 +12,7 @@ type: Arcade
     #container {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
 
     #gridCanvas {
@@ -30,11 +31,43 @@ type: Arcade
 
     #customColorInput {
         margin-top: 20px;
+        position: relative;
     }
 
     #customColorText {
         margin-bottom: 5px;
         font-weight: bold;
+        color: #00ff00; /* Neon green */
+    }
+
+    #customColorTextInput {
+        width: calc(100% - 10px);
+        padding: 5px;
+        border: 2px solid #00ff00; /* Neon green outline */
+        color: #00ff00;
+        margin-bottom: 5px;
+        outline: none; /* Remove default input outline */
+    }
+
+    #customColorTextInput::placeholder {
+        color: #00ff00;
+    }
+
+    #resetButton {
+        background-color: transparent;
+        color: #ff0000; /* Red text */
+        border: 2px solid #ff0000; /* Red border */
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #resetButton:hover {
+        background-color: #ff0000; /* Red background on hover */
+        color: #ffffff; /* White text on hover */
     }
 </style>
 <h1>Binary Painter Game</h1>
@@ -57,13 +90,14 @@ type: Arcade
             <span id="blueValue">0</span>
         </div>
         <div id="customColorInput">
-            <div id="customColorText">Feeling ready? Try some custom binary! Add your own 24-bit binary color:</div>
-            <input type="text" id="customColorTextInput">
-            <button onclick="applyCustomColor()">Apply</button>
+            <div id="customColorInput">Feeling ready? Try some custom binary! Add your own 24-bit binary color:</div>
+            <input type="text" id="customColorTextInput" placeholder="Type here">
+            <button id="applyCustomColorButton" onclick="applyCustomColor()">Apply</button>
         </div>
-        <div id="binaryValue"></div>
     </div>
+    <button id="resetButton" onclick="resetCanvas()">Reset</button>
 </div>
+<div id="binaryValue"></div>
 <script>
     const canvas = document.getElementById('gridCanvas');
     const context = canvas.getContext('2d');
@@ -180,6 +214,15 @@ type: Arcade
         const b = decimalValue & 255;
 
         return [r, g, b];
+    }
+
+    function resetCanvas() {
+        customColorTextInput.value = ''; // Clear custom color input
+        redSlider.value = 0;
+        greenSlider.value = 0;
+        blueSlider.value = 0;
+        updateColor();
+        draw(); // Redraw the grid
     }
 
     draw();

@@ -110,11 +110,13 @@ type: ccc
 >- This example shows how you can convert into binary and then group to simplify before getting the desired hexadecimal value.
 <br><br>
 
->### Practice ALL your conversions here!
+>#### Practice ALL your conversions here!
 [Bin, Dec, and Hex Converter](https://alishahussain.github.io/team2//hex-to-bin-and-dec)
 
->### Now, apply what you've learned and play these guessing games!
+>#### Now, apply what you've learned and play these guessing games!
 [Binary to Decimal Guessing Game](https://alishahussain.github.io/team2//binary-guessing-game)
+<br><br>
+
 [Decimal to Binary Guessing Game](https://alishahussain.github.io/team2//decimal-guessing-game)
 
 >### Binary Conversion Tables

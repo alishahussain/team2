@@ -184,5 +184,4 @@ type: Arcade
             initGame('gameBoard3', 'timer3', 'score3', 12);
         });
     </script>
-</body>
-</html>
+

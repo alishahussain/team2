@@ -3,7 +3,7 @@ layout: post
 toc: false
 description: Alphabet Translations
 courses: { csp: {week: 14} }
-permalink: Binary Alphabet
+permalink: How To Convert Text To Binary
 type: ccc
 ---
 

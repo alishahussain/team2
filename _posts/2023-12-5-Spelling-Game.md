@@ -1,9 +1,9 @@
 ---
 layout: post
 toc: false
-description: learn to spell in binary
+description: learn to translate text to binary
 courses: { csp: {week: 14} }
-permalink: Spelling Game
+permalink: Text To Binary Game
 type: ccc
 ---
 

@@ -79,7 +79,380 @@ type: ccc
 
 ###  hexadecimal guide (decimal, binary), then add a guessing game that could potentially have all 4 options
 -------------------------
-### How to Convert Decimal to Hexadecimal
+>### How to Convert Decimal to Hexadecimal
+
+>- The hexadecimal number system is a system in which numbers are expressed in the base 16. In the hexadecimal number system, the numbers are represented in terms of 0-9 and A – F. The hexadecimal number is written as number H, (number)16, (number)H. Example: (A23F)16,
+<br><br>
+
+>- Step 1: Take the decimal number as dividend and 16 as the divisor (hexadecimal number will have 16 as a base)
+<br><br>
+
+>- Step 2: Divide the dividend with the divisor and store the remainder in an array
+<br><br>
+
+>- Step 3: Now divide the quotient obtained from the above step by 16 and store the remainder in the array.
+<br><br>
+
+>- Step 4: Repeat the third step until the number is greater than zero.
+<br><br>
+
+>- Step 5: The final hexadecimal value will be the reverse order of the array.
+<br><br>
+![]({{site.baseurl}}/images/dechexadec.png)
+<br><br>
+
+>- This picture includes an example of a decimal (2545) converted into hexadecimal.
+
+<br><br>
+![]({{site.baseurl}}/images/dechexadec2.png)
+<br><br>
+
+>- This example shows how you can convert into binary and then group to simplify before getting the desired hexadecimal value.
+<br><br>
+
+>### Binary Conversion Tables
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Table</title>
+    <style>
+        /* Optional: Add some basic styling for better appearance */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Decimal to Binary Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Decimal</th>
+                <th>Binary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Replace the content below with your own values -->
+            <tr>
+                <td>0</td>
+                <td>0000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0001</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>0010</td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>0011</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>0100</td>
+            </tr>
+             <tr>
+                <td>5</td>
+                <td>0101</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>0110</td>
+            </tr>
+             <tr>
+                <td>7</td>
+                <td>0111</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>1001</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>1010</td>
+            </tr>
+             <tr>
+                <td>11</td>
+                <td>1011</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>1100</td>
+            </tr>
+             <tr>
+                <td>13</td>
+                <td>1101</td>
+            </tr>
+             <tr>
+                <td>14</td>
+                <td>1110</td>
+            </tr>
+             <tr>
+                <td>15</td>
+                <td>1111</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+<br><br>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Table</title>
+    <style>
+        /* Optional: Add some basic styling for better appearance */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<br><br>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Table</title>
+    <style>
+        /* Optional: Add some basic styling for better appearance */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Decimal to Hexadecimal Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Decimal Digit</th>
+                <th>Hexadecimal Digit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Replace the content below with your own values -->
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+             <tr>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>6</td>
+            </tr>
+             <tr>
+                <td>7</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>A</td>
+            </tr>
+             <tr>
+                <td>11</td>
+                <td>B</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>C</td>
+            </tr>
+             <tr>
+                <td>13</td>
+                <td>D</td>
+            </tr>
+             <tr>
+                <td>14</td>
+                <td>E</td>
+            </tr>
+             <tr>
+                <td>15</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+<br><br>
+
+
+    <h2>Decimal, Binary, and Hexadecimal Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Decimal Digit</th>
+                <th>Hexadecimal Digit</th>
+                <th>Binary Form</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Replace the content below with your own values -->
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0001</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>0010</td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>0011</td>
+            </tr>
+             <tr>
+                <td>4</td>
+                <td>4</td>
+                <td>0100</td>
+            </tr>
+             <tr>
+                <td>5</td>
+                <td>5</td>
+                <td>0101</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>6</td>
+                <td>0110</td>
+            </tr>
+             <tr>
+                <td>7</td>
+                <td>7</td>
+                <td>0111</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>8</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>9</td>
+                <td>1001</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>A</td>
+                <td>1010</td>
+            </tr>
+             <tr>
+                <td>11</td>
+                <td>B</td>
+                <td>1011</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>C</td>
+                <td>1100</td>
+            </tr>
+             <tr>
+                <td>13</td>
+                <td>D</td>
+                <td>1101</td>
+            </tr>
+             <tr>
+                <td>14</td>
+                <td>E</td>
+                <td>1110</td>
+            </tr>
+             <tr>
+                <td>15</td>
+                <td>F</td>
+                <td>1111</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
 
 
 

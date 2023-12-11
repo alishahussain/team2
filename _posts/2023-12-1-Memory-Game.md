@@ -42,7 +42,23 @@ type: ccc
         font-size: 20px;
         cursor: pointer;
         border: 1px solid #39FF14; /* Set border color to neon green */
-    }
+        position: relative;
+    }   
+    .card:hover::after {
+    content: attr(data-type);
+    position: absolute;
+    bottom: 100%; /* Position the hint above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: black;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    z-index: 100; /* Ensures the hint is above other elements */
+    margin-bottom: 5px; /* Adds some space between the hint and the card */
+}
         #timer, #score, #timer2, #score2, #timer3, #score3 {
             margin: 20px 0;
             font-size: 20px;
@@ -101,7 +117,7 @@ type: ccc
                         card.setAttribute('data-index', index);
 
                         const decimal = number.length === 3 ? parseInt(number, 2) : number;
-                        card.setAttribute('data-decimal', decimal);
+                        card.setAttribute('data-type', number.length === 3 ? 'Binary Number' : 'Decimal');
 
                         card.addEventListener('click', () => revealCard(card, index, board, cardsRevealed, selectedCards, scoreDisplay, score));
                         board.appendChild(card);

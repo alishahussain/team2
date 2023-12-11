@@ -6,9 +6,8 @@ let scoreOutput = document.getElementById("score");
 let currentDecimal;
 
 function generateRandomDecimal() {
-  let decimal = Math.floor(Math.random() * 256);
-  decimalOutput.textContent = decimal;
-  currentDecimal = decimal;
+  currentDecimal = Math.floor(Math.random() * 256);
+  decimalOutput.textContent = currentDecimal;
 }
 
 function checkGuess() {
@@ -23,7 +22,7 @@ function checkGuess() {
       resultOutput.textContent = "Congratulations! Your guess is correct!";
       incrementScore();
     } else {
-      resultOutput.textContent = `Sorry, the correct answer is ${currentDecimal}.`;
+      resultOutput.textContent = `Sorry, the correct answer is ${currentDecimal.toString(2)}.`;
     }
 
     // Reset the user input

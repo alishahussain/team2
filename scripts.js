@@ -3,7 +3,10 @@ let decimalOutput = document.querySelector('#decimal');
 let hexOutput = document.querySelector('#hexadecimal');
 
 document.querySelector('#bToD').addEventListener('click', () => convertBit(binaryOutput.value, 'bOutput', 'binary', 'decimal'));
-document.querySelector('#bToH').addEventListener('click', () => convertBit(binaryOutput.value, 'bOutput', 'binary', 'hex'));
+document.querySelector('#dToH').addEventListener('click', () => {
+    const decimalInput = document.getElementById('decimal').value;
+    convertBit(decimalInput, 'dOutput', 'decimal', 'hex');
+});
 document.querySelector('#dToB').addEventListener('click', () => convertBit(decimalOutput.value, 'dOutput', 'decimal', 'binary'));
 document.querySelector('#dToH').addEventListener('click', () => convertBit(decimalOutput.value, 'dOutput', 'decimal', 'hex'));
 document.querySelector('#hToB').addEventListener('click', () => convertBit(hexOutput.value, 'hOutput', 'hex', 'binary'));
@@ -56,24 +59,16 @@ function binToHex(src) {
         '1111': 'F'
     };
 
-    let i;
+    let srcString = src.toString();
     let answer = '';
-    let rem = '';
-    const len = 4;
-    const srcString = src.toString();
 
-    for (i = srcString.length; i >= len; i -= len) {
-        if (i - len < srcString.length) {
-            answer = baseMap[srcString.substr(i - len, len)] + answer;
-        }
+    // Pad with leading zeros to make it multiple of 4
+    while (srcString.length % 4 !== 0) {
+        srcString = '0' + srcString;
     }
-    
-    if (i !== 0) {
-        rem = srcString.substr(0, i);
-        while (rem.length < 4) {
-            rem = '0' + rem;
-        }
-        answer = baseMap[rem] + answer;
+
+    for (let i = 0; i < srcString.length; i += 4) {
+        answer += baseMap[srcString.substr(i, 4)];
     }
 
     return answer;
@@ -113,7 +108,7 @@ function decToHex(src) {
         '12': 'C',
         '13': 'D',
         '14': 'E',
-        '15': 'F'
+        '15': 'F',
     };
 
     let n = 0;
@@ -166,22 +161,22 @@ function hexToBin(src) {
 
 function hexToDec(src) {
     const baseMap = {
-        '0': '0',
-        '1': '1',
-        '2': '2',
-        '3': '3',
-        '4': '4',
-        '5': '5',
-        '6': '6',
-        '7': '7',
-        '8': '8',
-        '9': '9',
-        'A': '10',
-        'B': '11',
-        'C': '12',
-        'D': '13',
-        'E': '14',
-        'F': '15'
+        '0': 0,
+        '1': 1,
+        '2': 2,
+        '3': 3,
+        '4': 4,
+        '5': 5,
+        '6': 6,
+        '7': 7,
+        '8': 8,
+        '9': 9,
+        'A': 10,
+        'B': 11,
+        'C': 12,
+        'D': 13,
+        'E': 14,
+        'F': 15
     };
 
     let srcString = src.toString().toUpperCase();
@@ -193,5 +188,6 @@ function hexToDec(src) {
 
     return answer;
 }
+
 
 //TODO: Form validation 

@@ -156,6 +156,9 @@ type: Arcade
 <br><br>
 
 >[Decimal to Binary Guessing Game](https://alishahussain.github.io/team2//decimal-guessing-game)
+<br><br>
+
+>[The ULTIMATE Binary Game](https://alishahussain.github.io/team2//b-g)
 
 >### Binary Conversion Tables
 

@@ -6,7 +6,6 @@ courses: { csp: {week: 14} }
 permalink: memory-game
 type: Arcade
 ---
-
 <html>
 <head>
     <title>Binary Memory Game</title>
@@ -17,48 +16,45 @@ type: Arcade
             justify-content: center;
             gap: 50px;
         }
-       .game-board {
-        width: 400px;
-        height: 400px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 5px;
-        border-collapse: collapse; /* Add this line to ensure borders collapse into a single line */
-    }
+        .game-board {
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+            border-collapse: collapse;
+        }
         .game-board.hard {
-            grid-template-columns: repeat(5, 1fr); /* More columns for higher difficulty */
-            background-color: black; /* Different background for distinction */
+            grid-template-columns: repeat(5, 1fr);
+            background-color: black;
         }
         .game-board.hardest {
-            grid-template-columns: repeat(6, 1fr); /* Even more columns for the highest difficulty */
-            background-color: black; /* Different background for distinction */
-    }  
-      .card {
-        background-color: blue;
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        cursor: pointer;
-        border: 1px solid #39FF14; /* Set border color to neon green */
-        position: relative;
-    }   
-    .card:hover::after {
-    content: attr(data-type);
-    position: absolute;
-    bottom: 100%; /* Position the hint above the card */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    color: black;
-    white-space: nowrap; /* Prevents the text from wrapping */
-    z-index: 100; /* Ensures the hint is above other elements */
-    margin-bottom: 5px; /* Adds some space between the hint and the card */
-}
+            grid-template-columns: repeat(6, 1fr);
+            background-color: black;
+        }  
+        .card {
+            background-color: blue;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            position: relative; /* Added for hover hint */
+        }
+        .hover-hint {
+            display: none;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .card:hover .hover-hint {
+            display: block;
+        }
         #timer, #score, #timer2, #score2, #timer3, #score3 {
             margin: 20px 0;
             font-size: 20px;
@@ -66,22 +62,20 @@ type: Arcade
     </style>
 </head>
 <body>
-    <h1> Memory Game </h1>
-    <p> Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of difficulty, or try just one! Hover over a card to reveal if it is a binary number or a decimal. In case you forgot: To comvert binary numbers to their corresponding decimals, always use the base of 2, and go rigth to left. Example: 001= 2^0 x 1= (1 x 1) 1, 2^1 x 0 = (2 x 0) 0, 2^2 x 0 (4 x 0)= 0, 1+0+0= 1. 1 is the corresponding decical to 001. </p>
+    <h1>Memory Game</h1>
+    <p>Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of difficulty, or try just one!</p>
     <div class="container">
+        < <div class="container">
         <div class="game-section">
             <div id="timer">Time: 0 seconds</div>
-            <div id="score">Score: 0</div>
             <div id="gameBoard" class="game-board"></div>
         </div>
         <div class="game-section">
             <div id="timer2">Time: 0 seconds</div>
-            <div id="score2">Score: 0</div>
             <div id="gameBoard2" class="game-board hard"></div>
         </div>
         <div class="game-section">
             <div id="timer3">Time: 0 seconds</div>
-            <div id="score3">Score: 0</div>
             <div id="gameBoard3" class="game-board hardest"></div>
         </div>
     </div>
@@ -93,6 +87,7 @@ type: Arcade
                     [array[i], array[j]] = [array[j], array[i]];
                 }
             }
+
             function initGame(gameBoardId, timerId, scoreId, numPairs) {
                 const gameBoard = document.getElementById(gameBoardId);
                 const timerDisplay = document.getElementById(timerId);
@@ -117,21 +112,32 @@ type: Arcade
                         card.setAttribute('data-index', index);
 
                         const decimal = number.length === 3 ? parseInt(number, 2) : number;
-                        card.setAttribute('data-type', number.length === 3 ? 'Binary Number' : 'Decimal');
+                        card.setAttribute('data-decimal', decimal);
+
+                        // Create hover hint element
+                        const hoverHint = document.createElement('span');
+                        hoverHint.className = 'hover-hint';
+                        hoverHint.textContent = number.length === 3 ? 'Binary Number' : 'Decimal';
+                        card.appendChild(hoverHint);
 
                         card.addEventListener('click', () => revealCard(card, index, board, cardsRevealed, selectedCards, scoreDisplay, score));
                         board.appendChild(card);
                     });
                 }
+
                 function updateTimer(display, elapsed) {
                     display.textContent = 'Time: ' + elapsed + ' seconds';
                 }
 
                 function revealCard(card, index, board, cardsRevealed, selectedCards, scoreDisplay, score) {
                     if (cardsRevealed[index] || selectedCards.includes(index)) return;
+
                     card.style.backgroundColor = 'white';
                     let cardContent = board.children[index].getAttribute('data-number');
-                    card.textContent = cardContent;
+                    let cardText = document.createElement('div'); // Create a new div for the card content
+                    cardText.textContent = cardContent;
+                    card.appendChild(cardText); // Append the text to the card
+
                     selectedCards.push(index);
 
                     if (selectedCards.length === 2) {
@@ -162,22 +168,19 @@ type: Arcade
                         }, 1000);
                     }
 
-                    selectedCards.length = 0; // Clear the array
+                    selectedCards.length = 0;
                 }
 
                 function hideCard(card) {
                     card.style.backgroundColor = 'blue';
-                    card.textContent = '';
+                    if (card.lastChild) {
+                        card.removeChild(card.lastChild); // Remove the last child (the card content)
+                    }
                 }
             }
 
-            // Initialize the first game
             initGame('gameBoard', 'timer', 'score', 8);
-
-            // Initialize the second game with higher difficulty
             initGame('gameBoard2', 'timer2', 'score2', 10);
-
-            // Initialize the third game with the highest difficulty
             initGame('gameBoard3', 'timer3', 'score3', 12);
         });
     </script>

@@ -9,12 +9,13 @@ type: Arcade
 
 # Binary Logic: Arcade 
 # Review Ticket
+### Alisha Hussain, Anika Bhatnagar, Sergi 
 
 ## Painter Game
 
-The binary painter game is a project that I developed to provide users with an engaging platform for creating pixel art while learning binary logic. Users can easily manipulate RGB values using sliders and even input custom binary codes for precise color selection. Changng values on the sliders simultaneously changes the binary value of the color, showing the users how binary logic applies to color values. By clicking on the grid, users can fill pixels with their chosen colorsI decided to promote a creative way of learning, so that everyone can have fun while expirementing and understanding binary colors. At the beginning of this project, I was unsure of binary logic, but now I can understand how the numbers change, and how to manually do it as well. An issue I encountered was figuring out how to make the game educational, and getting the user to actually understand binary logic. I decided to use sliders to have a visual concept of the colors changing. 
+The binary painter game is a project that I developed to provide users with an engaging platform for creating pixel art while learning binary logic. Users can easily manipulate RGB values using sliders and even input custom binary codes for precise color selection. Changng values on the sliders simultaneously changes the binary value of the color, showing the users how binary logic applies to color values. By clicking on the grid, users can fill pixels with their chosen colorsI decided to promote a creative way of learning, so that everyone can have fun while expirementing and understanding binary colors. At the beginning of this project, I was unsure of binary logic, but now I can understand how the numbers change, and how to manually do it as well. An issue I encountered was figuring out how to make the game educational, and getting the user to actually understand binary logic. I decided to use sliders to have a visual concept of the colors changing. If I had more time, I would make a color by number game, where the binary values are shownn in each grid, and the user has to select the color tha would be made. This should 
 
-[![Painter Game Video](https://img.youtube.com/vi/lhSMafcq8IY/0.jpg)](https://youtu.be/lhSMafcq8IY)
+[![Painter Game Video](https://img.youtube.com/vi/lhSMafcq8IY/0.jpg)](https://youtu.be/tsD74cmm_So)
 
 ## Memory Game
 

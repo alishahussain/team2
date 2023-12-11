@@ -7,6 +7,9 @@ permalink: guessing
 type: ccc
 ---
 
+
+## Here is the one and only guide you need to understand binary!
+
 >### How does binary work? 
 >- The binary system is a way of representing data using 0s and 1s. This system is used by computers to represent all the data it works with. To compute a number in this system, you would multiply the digit value by the place value, then add them all together.
 

@@ -110,7 +110,12 @@ type: ccc
 >- This example shows how you can convert into binary and then group to simplify before getting the desired hexadecimal value.
 <br><br>
 
+>### Practice ALL your conversions here!
+[Bin, Dec, and Hex Converter]()
+
 >### Binary Conversion Tables
+
+#### These are all the Binary, Decimal, and Hexadecimal Conversion Tables!
 
 <html lang="en">
 <head>
@@ -453,8 +458,3 @@ type: ccc
 
 </body>
 </html>
-
-
-
->### Practice ALL your conversions here!
-[Bin, Dec, and Hex Converter]()

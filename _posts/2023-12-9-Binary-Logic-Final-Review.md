@@ -18,8 +18,16 @@ The binary painter game is a project that I developed to provide users with an e
 
 ## Memory Game
 
+<<<<<<< HEAD
 The binary memory game is the feature I focused on for the past couple of weeks. The purpose of the game is for the player to get familier with using the binary numbers and its decimals. The video below goes through the structures, key details of the game, the purpose again. As for making the game, I ran into some issues, This biggest issue I ran into was getting the cards to match up properly. This took a lot of trial and error, I would change things and test it and change more things and test that. The specific parts of the code that I focused on was in the javascript, and it was the functions that releated to card interactions. Another issue I faced was creating 3 gameboards that would work simultaneously. I was sucessfully creating one gamerboard, though I wanted there to be different levels of diffuculty for the player. I had to adjust the CSS to make the actual gameboards apppear, and I adjusted them by increasing the number of cards, then I added sperate elements/variables in the HTML for the different gameboards, and lastly I had seperate fuctions that initalize the gameboards in the javascript section of the code. One thing that went well from the start was the style  
 [![Memory Game Video](https://img.https://youtu.be/CnVl-AYDaiY)](https://youtu.be/CnVl-AYDaiY)
 
 
 [Binary Puzzle Game and Guide](https://youtu.be/j0T-oaZraf0)
+=======
+=======
+## Binary Knowledge Quiz 
+
+The binary knowldege quiz is a quiz that I created and focused on for these past few weeks. The purpose of this quiz is to test the user's knowledge about binary. This quiz is supposed to be taken after using our guides, using our converters, and playing our games. This will help the user finalize their learning about binary as they can tale this quiz as many times as they want. This quiz includes 3 multiple choice options, with 15 questions which include advanced and simple questions and information about binary. Users should take this quiz until they get atleast an 80% (12/15). At the beginning of my development, I ran into issues changing the theme of the quiz, but now I changed it into have a sleek green theme. I also had issues with conducting binary experiments but now I understand it all.
+[![Binary Quiz Video](https://img.youtube.com/vi/lhSMafcq8IY/0.jpg)](https://youtu.be/yKvhm2D_tdI)
+>>>>>>> 1a8c628 (removed highlight header)

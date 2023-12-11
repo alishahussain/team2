@@ -6,7 +6,7 @@ courses: { csp: {week: 14} }
 permalink: memory-game
 type: Arcade
 ---
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>Binary Memory Game</title>

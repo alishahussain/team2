@@ -28,7 +28,7 @@ The binary knowldege quiz is a quiz that I created and focused on for these past
 
 [Binary Quiz Video](https://youtu.be/yKvhm2D_tdI)
 
-## Binary Alphabetic Translator Game
+## Binary Alphabetic Translator Game and Guide
 
 I created the my binary game and its instructions to teach the user how to translate english to binary and vice-versa, it uses a database of words and gives the user a word in english or binary to translate. The provided video will display how the game functions and some of its primary features in more depth. Users should play this game until they can consistantly get atleast 3-5 score before getting three strikes and having to restart. In the creation of the game I ran into many issues. The first of which came with the most fundemental part of the game, I couldn't get the program to record the correct answers, the program was only recording strikes. After many instances of the program, I got that part of the program to work. However, since the program relied on randomization to give the user prompts, I would sometimes get the same word twice. When this was fixed I worked on getting the program to use english to binary instead of just binary to english and this caused all of my previous work on making two identical things not following eachother to not function. My team and I worked effectively together, with each member successfully completing their assigned tasks as anticipated. We would often help eachother in our different projects to the best extent we could when one of us got stuck.
 

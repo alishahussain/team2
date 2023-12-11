@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: false
-description:
+description: binary painter game
 courses: { csp: {week: 14} }
 permalink: binary-painter
 type: Arcade

@@ -6,6 +6,7 @@ courses: { csp: {week: 14} }
 permalink: memory-game
 type: Arcade
 ---
+<!DOCTYPE html>
 <html>
 <head>
     <title>Binary Memory Game</title>
@@ -16,7 +17,7 @@ type: Arcade
             justify-content: center;
             gap: 50px;
         }
-        .game-board {
+       .game-board {
             width: 400px;
             height: 400px;
             display: grid;
@@ -62,20 +63,22 @@ type: Arcade
     </style>
 </head>
 <body>
-    <h1>Memory Game</h1>
-      <p> Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of difficulty, or try just one! Hover over a card to reveal if it is a binary number or a decimal. In case you forgot: To comvert binary numbers to their corresponding decimals, always use the base of 2, and go rigth to left. Example: 001= 2^0 x 1= (1 x 1) 1, 2^1 x 0 = (2 x 0) 0, 2^2 x 0 (4 x 0)= 0, 1+0+0= 1. 1 is the corresponding decical to 001. </p>
+    <h1> Memory Game </h1>
+    <p>Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of difficulty, or try just one! Hover over a card to reveal if it is a binary number or a decimal.</p>
     <div class="container">
-        < <div class="container">
         <div class="game-section">
             <div id="timer">Time: 0 seconds</div>
+            <div id="score">Score: 0</div>
             <div id="gameBoard" class="game-board"></div>
         </div>
         <div class="game-section">
             <div id="timer2">Time: 0 seconds</div>
+            <div id="score2">Score: 0</div>
             <div id="gameBoard2" class="game-board hard"></div>
         </div>
         <div class="game-section">
             <div id="timer3">Time: 0 seconds</div>
+            <div id="score3">Score: 0</div>
             <div id="gameBoard3" class="game-board hardest"></div>
         </div>
     </div>
@@ -87,7 +90,6 @@ type: Arcade
                     [array[i], array[j]] = [array[j], array[i]];
                 }
             }
-
             function initGame(gameBoardId, timerId, scoreId, numPairs) {
                 const gameBoard = document.getElementById(gameBoardId);
                 const timerDisplay = document.getElementById(timerId);
@@ -124,20 +126,15 @@ type: Arcade
                         board.appendChild(card);
                     });
                 }
-
                 function updateTimer(display, elapsed) {
                     display.textContent = 'Time: ' + elapsed + ' seconds';
                 }
 
                 function revealCard(card, index, board, cardsRevealed, selectedCards, scoreDisplay, score) {
                     if (cardsRevealed[index] || selectedCards.includes(index)) return;
-
                     card.style.backgroundColor = 'white';
                     let cardContent = board.children[index].getAttribute('data-number');
-                    let cardText = document.createElement('div'); // Create a new div for the card content
-                    cardText.textContent = cardContent;
-                    card.appendChild(cardText); // Append the text to the card
-
+                    card.textContent = cardContent;
                     selectedCards.push(index);
 
                     if (selectedCards.length === 2) {
@@ -173,9 +170,7 @@ type: Arcade
 
                 function hideCard(card) {
                     card.style.backgroundColor = 'blue';
-                    if (card.lastChild) {
-                        card.removeChild(card.lastChild); // Remove the last child (the card content)
-                    }
+                    card.textContent = '';
                 }
             }
 
@@ -184,4 +179,6 @@ type: Arcade
             initGame('gameBoard3', 'timer3', 'score3', 12);
         });
     </script>
+</body>
+</html>
 

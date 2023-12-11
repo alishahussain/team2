@@ -16,4 +16,7 @@ The binary painter game is a project that I developed to provide users with an e
 
 [![Painter Game Video](https://img.youtube.com/vi/lhSMafcq8IY/0.jpg)](https://youtu.be/lhSMafcq8IY)
 
-## __ Game
+## Memory Game
+The binary memory game is the feature I focused on for the past couple of weeks. The purpose of the game is for the player to get familier with using the binary numbers and its decimals. The video below goes through the structures, key details of the game, the purpose again. As for making the game, I ran into some issues, I 
+[![Memory Game Video]([![Memory Game Video](https://img.youtube.com/vi/lhSMafcq8IY/0.jpg)](https://youtu.be/lhSMafcq8IY)
+)

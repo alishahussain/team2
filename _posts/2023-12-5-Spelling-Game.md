@@ -28,5 +28,5 @@ type: Arcade
 </body>
 </html>
 
-[Instructions](https://alishahussain.github.io/team2//Binary%20Alphabet)
+[Instructions](https://alishahussain.github.io/team2//How%20To%20Convert%20Text%20To%20Binary)
 

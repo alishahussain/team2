@@ -64,7 +64,7 @@ type: Arcade
 </head>
 <body>
     <h1> Memory Game </h1>
-    <p>Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of difficulty, or try just one! Hover over a card to reveal if it is a binary number or a decimal.</p>
+    <p>Flip the cards until you find the matching pair, test your memory. See how long it takes you to do all 3 levels of difficulty, or try just one! Hover over a card to reveal if it is a binary number or a decimal. In case you forgot: To convert binary numbers to their corresponding decimal, always use the base of 2, and go right to left. Exlample: 001=2^0 x 1(1 x 1)= 1, 2^1 x 0 (2 x 0)= 0, 2^2 x 0 (4 x 0)= 0, 1 + 0 + 0= 1. 1 is the corresponding decimal to 001.</p>
     <div class="container">
         <div class="game-section">
             <div id="timer">Time: 0 seconds</div>

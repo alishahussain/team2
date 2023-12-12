@@ -31,8 +31,8 @@ type: Arcade
       <td><a href="https://alishahussain.github.io/team2//Binary-Quiz">Binary Knowledge Quiz </a></td>
       <td><a href="https://alishahussain.github.io/team2//Text%20To%20Binary%20Game">Binary Spelling Game</a></td>
       <td><a href="https://alishahussain.github.io/team2//guessing">Binary Guide With Games Linked</a></td>
-      <td><a href="https://github.com/nitinsandiego/binarycptproject">BinaryCPT Project Repository</a></td>
-      <td><a href="https://github.com/nitinsandiego/binarycptproject/deployments">Deployments</a></td>
+      <td><a href="https://github.com/alishahussain/team2">BinaryCPT Project Repository</a></td>
+      <td><a href="https://github.com/alishahussain/team2/deployments">Deployments</a></td>
     </tr>
   </tbody>
 </table>

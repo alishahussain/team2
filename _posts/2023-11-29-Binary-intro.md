@@ -6,6 +6,19 @@ courses: { csp: {week: 14} }
 permalink: guessing
 type: Arcade
 ---
+#### Here are the games if you don't want to scroll down:
+
+>- [Binary to Decimal Converter](https://alishahussain.github.io/team2//binary-to-decimal-convert)
+
+>- [Decimal to Binary Converter](https://alishahussain.github.io/team2//decimal-to-binary-convert)
+
+>- [Bin, Dec, and Hex Converter](https://alishahussain.github.io/team2//hex-to-bin-and-dec) 
+
+>- [Binary to Decimal Guessing Game](https://alishahussain.github.io/team2//binary-guessing-game) 
+
+>- [Decimal to Binary Guessing Game](https://alishahussain.github.io/team2//decimal-guessing-game)
+
+>- [The ULTIMATE Binary Game(Binary Puzzle)](https://alishahussain.github.io/team2//b-g)
 
 
 ## Here is the one and only guide you need to understand binary!

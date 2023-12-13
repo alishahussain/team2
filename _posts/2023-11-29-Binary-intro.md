@@ -18,7 +18,7 @@ type: Arcade
 
 >- [Decimal to Binary Guessing Game](https://alishahussain.github.io/team2//decimal-guessing-game)
 
->- [The ULTIMATE Binary Game(Binary Puzzle)](https://alishahussain.github.io/team2//b-g)
+>- [The ULTIMATE Binary Game(Binary Puzzle)](https://alishahussain.github.io/team2//binary-puzzle)
 
 
 ## Here is the one and only guide you need to understand binary!

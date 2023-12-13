@@ -40,8 +40,25 @@ type: Arcade
 
 ## Alisha's Painter Game 
 
-The binary painter game is a project that I developed to provide users with an engaging platform for creating pixel art while learning binary logic. Users can easily manipulate RGB values using sliders and even input custom binary codes for precise color selection. Changng values on the sliders simultaneously changes the binary value of the color, showing the users how binary logic applies to color values. By clicking on the grid, users can fill pixels with their chosen colorsI decided to promote a creative way of learning, so that everyone can have fun while expirementing and understanding binary colors. At the beginning of this project, I was unsure of binary logic, but now I can understand how the numbers change, and how to manually do it as well. An issue I encountered was figuring out how to make the game educational, and getting the user to actually understand binary logic. I decided to use sliders to have a visual concept of the colors changing. If I had more time, I would make a color by number game, where the binary values are shownn in each grid, and the user has to select the color tha would be made. This should 
+The binary painter game is a project that I developed to provide users with an engaging platform for creating pixel art while learning binary logic. Users can easily manipulate RGB values using sliders and even input custom binary codes for precise color selection. Changng values on the sliders simultaneously changes the binary value of the color, showing the users how binary logic applies to color values. By clicking on the grid, users can fill pixels with their chosen colorsI decided to promote a creative way of learning, so that everyone can have fun while expirementing and understanding binary colors. At the beginning of this project, I was unsure of binary logic, but now I can understand how the numbers change, and how to manually do it as well.
 
+#### Issues I encountered
+- figuring out how to make the game educational
+- storing multiple colors as variables on the canvas
+- creating a color bar that the user can pick multiple colors
+- adding a cutom binary input option
+
+#### Accomplishments
+- did research on mouse click function
+- use sliders to have a visual concept of the colors changing
+- was able to make variables every time the user made a new color, so that they can draw with lots of different color
+- learned how to make an interactive grid
+- used math to efficiently format the game, for example: dividing the variables of the grid size by the canvas size so that it fits right
+
+#### If I had more time...
+- I would make a color by number game, where the binary values are shownn in each grid, and the user has to select the color that would be made.
+- I would add options for the grid size. The user can select if the grid is 5x5, 10x10, etc
+    
 [![Painter Game Video](https://img.youtube.com/vi/lhSMafcq8IY/0.jpg)](https://youtu.be/tsD74cmm_So)
 
 ## Anika's Memory Game

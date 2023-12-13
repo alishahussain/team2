@@ -171,7 +171,7 @@ type: Arcade
 >[Decimal to Binary Guessing Game](https://alishahussain.github.io/team2//decimal-guessing-game)
 <br><br>
 
->[The ULTIMATE Binary Game](https://alishahussain.github.io/team2//b-g)
+>[The ULTIMATE Binary Game](https://alishahussain.github.io/team2//binary-puzzle)
 
 >### Binary Conversion Tables
 

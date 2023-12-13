@@ -59,7 +59,7 @@ The binary memory game is the feature I focused on for the past couple of weeks.
  - My learnings: Understand how HTML and CSS work together to build on the visual structure and what gets displayed. I learned how to mess around with editing things to make them look how I want. For example how many cards per game, what color cards, etc. 
  - Learning and praticing JavaScript was a huge part of this game. It was how the game worked, rather than what it looked like. I was able to learn how to get the cards to reveal, match, or go back if it was not a match. JavaScript also updated teh score and the timer.  
  - Learned more about using arrays and how they specifcally helped my cards shuffle up. 
- - I learned how time consuming anf tedouis coding can be someetimes. Changing one small thing can impact the whole game. But overall the end product is definatly worth it! 
+ - I learned how time consuming and tedious coding can be someetimes. Changing one small thing can impact the whole game. But overall the end product is definatly worth it! 
 [![Memory Game Video](https://img.https://youtu.be/CnVl-AYDaiY)](https://youtu.be/CnVl-AYDaiY)
 
 ## Abdullah's Binary Knowledge Quiz 

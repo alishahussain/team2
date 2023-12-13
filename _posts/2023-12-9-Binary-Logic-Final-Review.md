@@ -64,7 +64,16 @@ The binary memory game is the feature I focused on for the past couple of weeks.
 
 ## Abdullah's Binary Knowledge Quiz 
 
-The binary knowldege quiz is a quiz that I created and focused on for these past few weeks. The purpose of this quiz is to test the user's knowledge about binary. This quiz is supposed to be taken after using our guides, using our converters, and playing our games. This will help the user finalize their learning about binary as they can tale this quiz as many times as they want. This quiz includes 3 multiple choice options, with 15 questions which include advanced and simple questions and information about binary. Users should take this quiz until they get atleast an 80% (12/15). At the beginning of my development, I ran into issues changing the theme of the quiz, but now I changed it into have a sleek green theme. I also had issues with conducting binary experiments but now I understand it all. I had some up and downs from the start, the up being having a valid selection of questions and answers to input into the JavaScript quiz. I had issues with the styling and the quiz not working itself, but the questions and answers was what went correct from the beginning. Overall, the issues had me struggling for a bit, but using collaboration and team skills, I figured it out.
+The binary knowldege quiz is a quiz that I created and focused on for these past few weeks. The purpose of this quiz is to test the user's knowledge about binary. This quiz is supposed to be taken after using our guides, using our converters, and playing our games. This will help the user finalize their learning about binary as they can tale this quiz as many times as they want. This quiz includes 3 multiple choice options, with 15 questions which include advanced and simple questions and information about binary. Users should take this quiz until they get atleast an 80% (12/15). At the beginning of my development, I ran into issues changing the theme of the quiz, but now I changed it into have a sleek green theme. I also had issues with conducting binary experiments but now I understand it all. I had some up and downs from the start, the up being having a valid selection of questions and answers to input into the JavaScript quiz. I had issues with the styling and the quiz not working itself, but the questions and answers was what went correct from the beginning. Overall, the issues had me struggling for a bit, but using collaboration and team skills, I figured it out. 
+
+#### Abdullah's Issues
+
+- I had issues making the quiz work, as my code had multiple errors
+- The quiz theme would show, but the quiz itself wasn't
+- When I changed the styles.css file, it crashed my whole quiz due to a missing (")
+- The quiz primarily had 5 questions, but when I increased the size to 15 questions, it crashed. 
+- Another issue was the font being the same color as the background, which confused me and made me think my questions wren't showing at all
+- My final issue was the quiz.js file, I put everything into 1 file instead of the quiz.md, quiz.js, and styles.css files.
 
 [Binary Quiz Video](https://youtu.be/yKvhm2D_tdI)
 

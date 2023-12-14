@@ -54,5 +54,5 @@ type: ccc
 - The cards became a lot more random and no longer had a pattern. 
 - changed color bar in painter game to sliders for more visual concept
 - changed formatting of painter game 
-
-
+- added finishing touched to all games 
+- did reviews

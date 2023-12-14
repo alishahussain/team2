@@ -21,7 +21,8 @@ type: ccc
 - figured out different binary topics to build around
 - assigned everyone roles for their games
 - started working on games, and preparing for first live review
-
+- switched directions from user encription tool to decryption learning game 
+- wrote initial code for english to binary translation
 
 
 
@@ -38,6 +39,9 @@ type: ccc
 - added binary painter game
 - Quiz started to work
 - Changed quiz
+- got translator game working
+- randomized prompts
+- fixed redundancies in prompts for translation game
 - Added quiz theme
 - Started adding questions to quiz
 - Changed answer choices to quiz
@@ -70,4 +74,6 @@ type: ccc
 - changed formatting of painter game 
 - added finishing touched to all games 
 - did reviews
+- added english to binary translation
+- changed original binary game color theme
 - Finalized binary arcade

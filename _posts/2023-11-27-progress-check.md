@@ -2,7 +2,7 @@
 layout: post
 toc: false
 description:
-courses: { csp: {week: 15} }
+courses: { csp: {week: 14} }
 permalink: progress
 type: ccc
 ---

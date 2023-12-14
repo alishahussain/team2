@@ -4,7 +4,7 @@ toc: false
 description:
 courses: { csp: {week: 15} }
 permalink: review-ticket
-type: Arcade
+type: ccc
 ---
 
 # Binary Logic: Arcade 

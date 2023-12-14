@@ -92,6 +92,28 @@ The binary knowldege quiz is a quiz that I created and focused on for these past
 - Another issue was the font being the same color as the background, which confused me and made me think my questions wren't showing at all
 - My final issue was the quiz.js file, I put everything into 1 file instead of the quiz.md, quiz.js, and styles.css files.
 
+#### Accomplishments
+
+- Quiz functions
+- Theme change worked into a neon green border and a dark green inside
+- Improved from 5 questions to 15 questions
+- Added one more multiple choice option, from 2-3
+- Worked on theme of whole website
+- Had multiple key commits
+- Quiz is in table
+- The quiz scores work 
+- Finally I finished everything
+
+#### If I Had More Time...
+
+- I would make a feature in which it jumbles up the questions instead of the same order
+- I would add a feature in which it jumbles up the answer choices
+- I would also add more questions
+- I would add a feature in which there would be an option to finalize your score, and then it would show the user the correct answer and explanation to the answer
+- I would have a skip question button, in case the user would like to skip any oparticular question in the quiz
+- I would make a feature in which the correct answer would be shown, if any particular answer was incorrect
+- I would make a pre quiz, which would be an easier and simpler version to take before our arcade, and my main quiz would be our post quiz
+
 [Binary Quiz Video](https://youtu.be/yKvhm2D_tdI)
 
 ## Vance's Binary Alphabetic Translator Game and Guide

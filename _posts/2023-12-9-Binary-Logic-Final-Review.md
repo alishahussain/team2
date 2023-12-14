@@ -122,7 +122,22 @@ I created the my binary game and its instructions to teach the user how to trans
 
 #### Vance's Issues
  - In the creation of the game I ran into many issues. The first of which came with the most fundemental part of the game, I couldn't get the program to record the correct answers, the program was only recording strikes. After many instances of the program, I got that part of the program to work. However, since the program relied on randomization to give the user prompts, I would sometimes get the same word twice. When this was fixed I worked on getting the program to use english to binary instead of just binary to english and this caused all of my previous work on making two identical things not following eachother to not function.
+ - The game would was also not properly translating english to binary, giving incorrect prompts making it impossible to play. This fix was simple, as the conversion code was incorrectly written.
+
+ #### Accomplishments
+- Deepened understanding of binary
+- Learned more JS and HTML programming
+- Improved ability to style and color websites
+- Worked more with databases
+- Worked with site prompts and responses in html pop-ups
+- Incrimental code committing
+- Learned better to work better with a team (AGILE)
+- Accurately assessing other students work
+- Finished all designated work and had time for bonus features
+
+ #### If I Had More Time...
  - If I had more time to work on this project, I would have added multiple difficulties, and tightened the databases of the difficulties to only one-two letter words for easy, three-four for medium and five letter plus words for hard.
+ - I also might have added a way to track previous games played, collecting more data to show user improvement.
 
 [Translator Game Video](https://youtu.be/f3peOiMGJdI)
 

@@ -108,6 +108,26 @@ I created the my binary game and its instructions to teach the user how to trans
 
 For the arcade I created an introductory binary guide that helps students understand the fundamentals of binary. In addition to the guide, I added converter games where the player inputs a decimal or binary number to convert it and potentially learn and memorize the way binary works. I also decided to add a hexadecimal guide since it's another important aspect of binary. One of the converters I created was a converter that included binary, decimals, and hexadecimal conversions. Once the students gets more comfortable with binary I decided it would be a great idea to create two guessing games, one for binary and one for decimals. If the player inputs an incorrect answer, the game makes sure you provide with the right answer to the question. These games help the player not only learn more about binary, but help understand the way it functions. This leads to the last and final binary puzzle game. This is by far the most interactive game which includes instructions, multiple levels that vary in difficulty, and a scoreboard. A cool concept in this game is that the player can run out of time; being able to calculate the conversions fast is really good when using binary, this game helps strengthen those binary skills and have fun at the same time! However, throughout the development of these game I struggled many issues such as the scaling of the games was messing up the menu bar, or the guessing games didn't work as expected whereas it was asking a decimal and expecting a decimal for the answer. I progressed through these games a lot, for example the guessing games didn't have the option to generate a new mumber. If I had more time I would add a hexadecimal guessing game and add more puzzles to the binary puzzle. I think my team and I collaborated well and everyone did their task as far as expected, which was something that calmed me down.
 
+#### Accomplishments: 
+- Created a good binary quide
+- Learned more about binary in the process
+- Added 6 games that focus on math in binary
+- Found a great game and was able to make changes to it
+- Was able to organize the arcade and assigned tasks for ebergone
+- Was a good teammate and collaborator throughout project
+- Contributed to the best of my ability and inputted a lot of effort
+- Solved many issues that weren't fixing for days
+- Learned more about SASS
+- Got to give out constructive criticism that helped others
+
+#### If I had more time...
+- I would maybe make a multiplayer option for the binary puzzle, this way people can race each other and see who can reach the final level or fail a level the fastest
+- I would add a hexadecimal guessing game and add hexadecimal puzzle to binary puzzle game
+- I would polish the guide and try to make it easier to understand and more fun/interactive yet educational
+- I would try out a new different feature such as ACSII or color code of binary
+- I would help my team with their features and imprpove any flaws
+- I would organize the arcade in a way where the person just has to follow the instructions and not just wander around it and trying to look for something random
+
 #### Sergi's Issues
 - At the very beginning, the puzzle game was not functioning as expected, and the scaling was too big, meaning the player wasn't even able to play it because it conflicted with the theme layout and wasn't able to scroll
 - After reading through many lines of code, I found an error that the game had an was able to add new instructions and a link for extra resources regarding binary

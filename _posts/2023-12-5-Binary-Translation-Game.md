@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: false
-description: learn to translate text to binary
+description: learn to translate text to binary using acsii
 courses: { csp: {week: 14} }
 permalink: Text To Binary Game
 type: Arcade

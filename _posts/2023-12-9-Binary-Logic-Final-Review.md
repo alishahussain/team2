@@ -125,7 +125,7 @@ I created the my binary game and its instructions to teach the user how to trans
  - In the creation of the game I ran into many issues. The first of which came with the most fundemental part of the game, I couldn't get the program to record the correct answers, the program was only recording strikes. After many instances of the program, I got that part of the program to work. However, since the program relied on randomization to give the user prompts, I would sometimes get the same word twice. When this was fixed I worked on getting the program to use english to binary instead of just binary to english and this caused all of my previous work on making two identical things not following eachother to not function.
  - The game would was also not properly translating english to binary, giving incorrect prompts making it impossible to play. This fix was simple, as the conversion code was incorrectly written.
 
- #### Accomplishments
+#### Accomplishments
 - Deepened understanding of binary
 - Learned more JS and HTML programming
 - Improved ability to style and color websites

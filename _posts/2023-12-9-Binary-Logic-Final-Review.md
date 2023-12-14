@@ -126,7 +126,6 @@ I created the my binary game and its instructions to teach the user how to trans
  - The game would was also not properly translating english to binary, giving incorrect prompts making it impossible to play. This fix was simple, as the conversion code was incorrectly written.
 
  #### Accomplishments
-
 - Deepened understanding of binary
 - Learned more JS and HTML programming
 - Improved ability to style and color websites
@@ -137,7 +136,7 @@ I created the my binary game and its instructions to teach the user how to trans
 - Accurately assessing other students work
 - Finished all designated work and had time for bonus features
 
- #### If I Had More Time...
+#### If I Had More Time...
  - If I had more time to work on this project, I would have added multiple difficulties, and tightened the databases of the difficulties to only one-two letter words for easy, three-four for medium and five letter plus words for hard.
  - I also might have added a way to track previous games played, collecting more data to show user improvement.
 

@@ -10,6 +10,10 @@ type: ccc
 # Week 1:
 - Added binary puzzle game
 - Changed it's css and scale to fit the screen
+- Added quiz outline
+- Changed theme for whole website
+- Removed extra weeks in table
+- Input the quiz.js file, styles.css, and the quiz.md files
 - Tried to fix scaling issue, so removed header and head
 - Created outline for the binary memory game 
 - Brainstormed specific features I wanted to include, and created an image on what I want the memory game to look like.
@@ -32,6 +36,12 @@ type: ccc
 - The cards were not very shuffled and they had a very recognizable pattern. Though it was working and would match pairs. 
 - Also added a timer and scorer. 
 - added binary painter game
+- Quiz started to work
+- Changed quiz
+- Added quiz theme
+- Started adding questions to quiz
+- Changed answer choices to quiz
+- Added score calculator to quiz
 - added grid and beginner color bar
 - began learning how to add color to fill in the grid, make the grid interactive
 - did live review, got input on our project and learned what to fix 
@@ -44,6 +54,10 @@ type: ccc
 
 # Week 3: 
 - Finalized binary guide
+- Put tables into binary guide
+- Finalized quiz
+- Finalized theme
+- Did grading reviews
 - Added binary to decimal guessing game
 - Added decimal to binary guessing game
 - Added hex, bin, dec, converter
@@ -56,3 +70,4 @@ type: ccc
 - changed formatting of painter game 
 - added finishing touched to all games 
 - did reviews
+- Finalized binary arcade

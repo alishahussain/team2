@@ -54,9 +54,9 @@ var questions = [
     },
     {
       question: "What is the result of adding the binary numbers 1011 and 1101?",
-      a: "1100",
-      b: "0011",
-      c: "0111",
+      a: "10100",
+      b: "00101",
+      c: "01100",
       answer: "C"
     },
     {
@@ -75,9 +75,9 @@ var questions = [
     },   
     {
       question: "What is the result of adding the binary numbers 110 and 011?",
-      a: "111",
-      b: "101",
-      c: "100",
+      a: "1001",
+      b: "1010",
+      c: "1100",
       answer: "A"
     },
     {

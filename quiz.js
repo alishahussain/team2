@@ -144,6 +144,52 @@ function renderQuestion(){
   quiz.innerHTML += "<label> <input type='radio' name='options' value='B'> "+optionB+"</label><br>";
   quiz.innerHTML += "<label> <input type='radio' name='options' value='C'> "+optionC+"</label><br><br>";
   quiz.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+  // Display correct answer button after user submits
+
+  quiz.innerHTML += "<button onclick='submitAnswer()'>Check Answer</button>";
+}
+
+function submitAnswer() {
+  // Disable radio buttons to prevent further changes
+  options = document.getElementsByName("options");
+  for (var i = 0; i < options.length; i++) {
+    options[i].disabled = true;
+  }
+
+  // Get the selected answer
+  for (var i = 0; i < options.length; i++) {
+    if (options[i].checked) {
+      selectedAnswer = options[i].value;
+    }
+  }
+
+  // Display if the answer is correct or not
+  if (selectedAnswer == questions[pos].answer) {
+    quiz.innerHTML += "<p>Correct!</p>";
+    correct++;
+  } else {
+    quiz.innerHTML += "<p>Incorrect. Correct Answer: " + questions[pos].answer + "</p>";
+  }
+
+  // Display the next question button
+  quiz.innerHTML += "<button onclick='nextQuestion()'>Next Question</button>";
+}
+
+function nextQuestion() {
+  // Move to the next question
+  pos++;
+
+  // Check if the quiz is completed
+  if (pos >= questions.length) {
+    quiz.innerHTML = "<h2>You answered " + correct + " of " + questions.length + " questions correctly.</h2><br><button onclick='renderQuestion()'>Play again</button>";
+    get("quiz_status").innerHTML = "Quiz completed";
+    pos = 0;
+    correct = 0;
+    return false;
+  }
+
+  // Render the next question
+  renderQuestion();
 }
 
 function checkAnswer(){
